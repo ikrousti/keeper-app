@@ -11,11 +11,11 @@ function App(){
         <div className="header">
             <Header />
             </div>
-            {notes.map(notes =>
+            {notes.map(noteItem =>
         <Note
-        key={notes.id}
-        title={notes.title}
-        content={notes.content}
+        key={noteItem.id}
+        title={noteItem.title}
+        content={noteItem.content}
     />)}
             <div className="footer">
             <Footer />
